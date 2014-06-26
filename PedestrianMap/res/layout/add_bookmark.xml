@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingTop="6dp"
+android:paddingBottom="6dp"
+android:paddingLeft="6dp"
+android:paddingRight="6dp"
+>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="2dp"
+        android:textSize="19sp"
+        android:textColor="#FFF"
+        android:text="@string/pmap.bookmark_add_title_str"
+        />
+        
+    <EditText android:id="@+id/edit_bookmark_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        />
+    
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingTop="6dp"
+        android:paddingLeft="2dp"
+        android:textSize="19sp"
+        android:textColor="#FFF"
+        android:text="@string/pmap.bookmark_add_info_str"
+        />
+        
+    <EditText android:id="@+id/edit_bookmark_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        />
+        
+</LinearLayout>

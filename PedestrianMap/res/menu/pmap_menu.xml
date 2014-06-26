@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group.main">
+        <item android:id="@+id/pmap.menu_search"
+              android:title="@string/pmap.menu_search" 
+              android:icon="@drawable/ic_menu_search"
+              />
+        <item android:id="@+id/pmap.menu_direction"
+              android:title="@string/pmap.menu_direction" 
+              android:icon="@drawable/ic_menu_directions"
+              />
+        <item android:id="@+id/pmap.menu_layer"
+              android:title="@string/pmap.menu_layer" 
+              android:icon="@drawable/ic_menu_slideshow"
+              />
+        <item android:id="@+id/pmap.menu_bookmark"
+              android:title="@string/pmap.menu_bookmark" 
+              android:icon="@drawable/ic_menu_mark"
+              />
+        <item android:id="@+id/pmap.menu_clean_map"
+              android:title="@string/pmap.menu_clean_map" 
+              android:icon="@drawable/ic_menu_close_clear_cancel"
+              />
+        <item android:id="@+id/pmap.menu_about"
+              android:title="@string/pmap.menu_about" 
+              android:icon="@drawable/ic_menu_info_details"
+              />
+    </group>
+    <group android:id="@+id/menu_group.direction_setup"
+        android:visible="false">
+        <item android:id="@+id/direction_setup.menu_reverse"
+              android:title="@string/direction_setup.menu_reverse" 
+              android:icon="@drawable/ic_menu_refresh"
+              android:enabled="false"
+              />
+        <item android:id="@+id/direction_setup.menu_clear"
+              android:title="@string/direction_setup.menu_clear" 
+              android:icon="@drawable/ic_menu_close_clear_cancel"
+              />
+        <item android:id="@+id/direction_setup.menu_mass_opt"
+              android:title="@string/direction_setup.menu_mass_opt" 
+              android:icon="@drawable/ic_menu_more"
+              android:enabled="false"
+              />
+    </group>
+</menu>

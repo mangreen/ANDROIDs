@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/WalkMap/!svn/ver/20/src/com/iiiesti/walkmap/database
+END
+BookmarkDBManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/WalkMap/!svn/ver/1/src/com/iiiesti/walkmap/database/BookmarkDBManager.java
+END
+IndoorMapDBManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/WalkMap/!svn/ver/57/src/com/iiiesti/walkmap/database/IndoorMapDBManager.java
+END
+MassTransitDBManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/WalkMap/!svn/ver/1/src/com/iiiesti/walkmap/database/MassTransitDBManager.java
+END

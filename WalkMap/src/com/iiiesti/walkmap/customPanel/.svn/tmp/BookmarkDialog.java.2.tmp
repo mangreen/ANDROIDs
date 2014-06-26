@@ -1,0 +1,227 @@
+package com.iiiesti.walkmap.customPanel;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.database.Cursor;
+import android.util.Log;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.maps.GeoPoint;
+import com.iiiesti.walkmap.PMap;
+import com.iiiesti.walkmap.R;
+import com.iiiesti.walkmap.database.BookmarkDBManager;
+import com.iiiesti.walkmap.direction.DirectionManager;
+import com.iiiesti.walkmap.overlays.Overlay_Location;
+
+public abstract class BookmarkDialog extends AlertDialog {
+
+	/*This for debug*/
+	private static final String D_TAG = "BookmarkDialog" ; 
+	
+	protected static final int MENUITEM_BOOKMARK_DELETE = R.id.pmap_bookmark_context_delete;
+	protected static final int MENUITEM_BOOKMARK_EDIT = R.id.pmap_bookmark_context_edit;
+	
+
+	Context mContext;
+	BookmarkDBManager mBookmarkDB;
+	Cursor mBookmarkCursor;
+	Overlay_Location mLocationOverlay;
+	int mOperationMode;
+	DirectionManager mDirectionSetup;
+
+	public BookmarkDialog(Context context, 
+			SimpleCursorAdapter bookmarkAdapter,
+			BookmarkDBManager bookmarkDB,
+			Cursor bookmarkCursor,
+			Overlay_Location locationOverlay,
+			int operationMode,
+			DirectionManager directionSetup) 
+	{
+		super(context);
+		
+		mContext = context;
+		mBookmarkDB = bookmarkDB;
+		mBookmarkCursor = bookmarkCursor;
+		mLocationOverlay = locationOverlay;
+		mOperationMode = operationMode;
+		mDirectionSetup = directionSetup;
+		mBookmarkDB = bookmarkDB;
+		
+		/* Setup content */
+		LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		ListView listView = (ListView)inflater.inflate(R.layout.simple_listview_for_style, null);
+		listView.setAdapter(bookmarkAdapter);
+		
+		/* Setup handler */
+		listView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				mBookmarkCursor.moveToPosition(position);
+				
+				if(position == 0)
+				{
+					if(mLocationOverlay == null)
+						Toast.makeText(mContext, mContext.getString(R.string.pmap_bookmark_no_current_location_indoor), Toast.LENGTH_SHORT).show();
+					else
+					{
+						if(mLocationOverlay.getCurrentPoint() != null)
+						{
+							animateToForOutdoor(mLocationOverlay.getCurrentPoint());
+							
+							switch(mOperationMode)
+							{
+							case PMap.BOOKMARK_MODE_SET_START:
+								mDirectionSetup.setStart(true, mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_NAME),
+										mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_INFO), 
+										mLocationOverlay.getCurrentPoint(),
+										mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_BUILD_ID),
+										mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_FLOOR));
+								break;
+							case PMap.BOOKMARK_MODE_SET_END:
+								mDirectionSetup.setEnd(true, mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_NAME),
+										mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_INFO), 
+										mLocationOverlay.getCurrentPoint(),
+										mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_BUILD_ID),
+										mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_FLOOR));
+								break;
+							}
+						}
+						else
+							Toast.makeText(mContext, mContext.getString(R.string.pmap_bookmark_no_current_location), Toast.LENGTH_SHORT).show();
+					}
+				}
+				else
+				{
+					mBookmarkOperation(mOperationMode,
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_LAT), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_LON), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_ADDR_LAT), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_ADDR_LON), 
+							mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_NAME), 
+							mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_INFO), 
+							mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_BUILD_ID), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_FLOOR));
+				}
+				dismiss();
+			}
+		});  
+		
+		registerForContextMenu(listView);
+		
+		/* Setup Dialog */
+		setIcon(R.drawable.ic_dialog_bookmark);
+		setTitle(R.string.pmap_menu_bookmark);
+		setView(listView, 0, 0, 0, 0);
+		setButton(BUTTON_NEUTRAL, mContext.getText(R.string.btn_cancel), new OnClickListener() {
+			@Override
+			public void onClick(DialogInterface arg0, int arg1) {
+				dismiss();
+			}
+		});
+	}
+	
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v,
+			ContextMenuInfo menuInfo) {
+		if(((AdapterContextMenuInfo)menuInfo).id == 1)
+			Toast.makeText(mContext, R.string.hint_on_bookmark_context_for_current_location, Toast.LENGTH_LONG).show();
+		else
+		{
+			MenuInflater inflater = ((Activity)mContext).getMenuInflater();
+			inflater.inflate(R.menu.bookmark_context_menu, menu);
+			menu.setHeaderTitle(((TextView)((AdapterContextMenuInfo)menuInfo).targetView.findViewById(R.id.simple_info_title)).getText());
+		}
+		super.onCreateContextMenu(menu, v, menuInfo);
+	}
+	
+	// [NOTE] Since onContextItemSelected() is not worked for unknown reason, onMenuItemSelected() is used here instated
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		final AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
+
+		switch(item.getItemId())
+		{
+		case MENUITEM_BOOKMARK_DELETE:
+			mBookmarkDB.SPOINT_delete(info.id);
+			break;
+		case MENUITEM_BOOKMARK_EDIT:
+			LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			View view = (View)inflater.inflate(R.layout.add_bookmark, null);
+			final EditText titleEdit = (EditText)view.findViewById(R.id.edit_bookmark_title);
+			final EditText infoEdit = (EditText)view.findViewById(R.id.edit_bookmark_info);
+			titleEdit.setText(mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_NAME));
+			infoEdit.setText(mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_INFO));
+			final int key = mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_ID);
+			new AlertDialog.Builder(mContext)
+			.setIcon(R.drawable.ic_dialog_edit)
+            .setTitle(R.string.pmap_bookmark_edit)
+            .setView(view)
+            .setPositiveButton(R.string.btn_ok, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+<<<<<<< .mine
+=======
+                	Log.d(D_TAG, "info ID"+info.id);
+                	Log.d(D_TAG, "db ID"+key);
+>>>>>>> .r38
+                	mBookmarkDB.SPOINT_update(key,
+                			titleEdit.getText().toString(),
+                			infoEdit.getText().toString(),
+                			mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_LAT), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_LON), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_ADDR_LAT), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_ADDR_LON), 
+							mBookmarkCursor.getInt(BookmarkDBManager.CCOLUMN_SPOINT_INT_FLOOR),
+							mBookmarkCursor.getString(BookmarkDBManager.CCOLUMN_SPOINT_STR_BUILD_ID));
+                	mBookmarkCursor.requery();
+                }
+            })
+            .setNegativeButton(R.string.btn_cancel, null)
+            .show();
+			break;
+		}
+		mBookmarkCursor.requery();
+		
+		return super.onMenuItemSelected(featureId, item);
+	}
+
+	protected abstract void animateToForOutdoor(GeoPoint targetLocation);
+	protected abstract void mBookmarkOperation(int operationMode,
+			int latE6, int lonE6,
+			int addrLatE6, int addrLonE6,
+			String name,
+			String info,
+			String buildID,
+			int floorID);
+	
+	/*
+	@Override
+	 public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
+		menu.setHeaderTitle(R.string.pmap_bookmark_edit);     
+        menu.add(0, 0, 0, R.string.btn_edit);  
+        menu.add(0, 1, 0, R.string.btn_delete);
+	 }
+	
+	//long press handler
+    @Override  
+    public boolean onContextItemSelected(MenuItem item) {
+    	Log.d(TAG, "xxxxxxxxxxxxxxxxxxxx");
+    	
+        return super.onContextItemSelected(item);  
+    }*/
+}

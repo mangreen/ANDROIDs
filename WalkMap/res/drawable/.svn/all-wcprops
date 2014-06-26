@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/WalkMap/!svn/ver/52/res/drawable
+END
+btn_point_op_map_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_map_view.xml
+END
+btn_direction_point_go.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_point_go.xml
+END
+btn_point_op_set_start.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_set_start.xml
+END
+btn_r_map_mode_na.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_map_mode_na.xml
+END
+btn_upstair.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_upstair.xml
+END
+btn_point_op_set_end.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_set_end.xml
+END
+btn_l_next.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_l_next.xml
+END
+btn_direction_step_switch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_step_switch.xml
+END
+btn_r_l_map_mode_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_l_map_mode_1.xml
+END
+btn_r_l_map_mode_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_l_map_mode_2.xml
+END
+btn_point_op_in_out.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_in_out.xml
+END
+btn_direction_point_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_point_info.xml
+END
+btn_direction_mode_r_mt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_mode_r_mt.xml
+END
+btn_close.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/WalkMap/!svn/ver/18/res/drawable/btn_close.xml
+END
+btn_point_op_street_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_street_view.xml
+END
+btn_direction_step_next.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_step_next.xml
+END
+btn_outdoor_switch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/WalkMap/!svn/ver/21/res/drawable/btn_outdoor_switch.xml
+END
+btn_r_lo_map_mode_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_lo_map_mode_1.xml
+END
+btn_direction_mode_l_walk.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_mode_l_walk.xml
+END
+btn_r_lo_map_mode_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_lo_map_mode_2.xml
+END
+btn_direction_point_bookmark.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_point_bookmark.xml
+END
+btn_r_lo_map_mode_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_lo_map_mode_3.xml
+END
+btn_popup_text_above.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_popup_text_above.xml
+END
+btn_r_indoor_sw.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/WalkMap/!svn/ver/52/res/drawable/btn_r_indoor_sw.xml
+END
+btn_l_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_l_list.xml
+END
+btn_direction_step_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_step_info.xml
+END
+btn_l_prev.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_l_prev.xml
+END
+btn_l_direction.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/WalkMap/!svn/ver/49/res/drawable/btn_l_direction.xml
+END
+btn_r_zoom_in.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_zoom_in.xml
+END
+btn_direction_point_to.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_point_to.xml
+END
+btn_r_zoom_out.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_zoom_out.xml
+END
+btn_direction_step_last.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_step_last.xml
+END
+btn_r_o_map_mode_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_o_map_mode_1.xml
+END
+btn_r_o_map_mode_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_r_o_map_mode_2.xml
+END
+btn_point_op_srch_google.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_srch_google.xml
+END
+btn_point_op_ar_direct.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_ar_direct.xml
+END
+btn_downstair.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_downstair.xml
+END
+btn_direction_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_direction_list.xml
+END
+btn_point_op_bookmark.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_point_op_bookmark.xml
+END
+btn_floor_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/WalkMap/!svn/ver/1/res/drawable/btn_floor_list.xml
+END

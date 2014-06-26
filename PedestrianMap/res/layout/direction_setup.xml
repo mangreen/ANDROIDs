@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    >
+    
+    <!-- Background -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_direction_setup_up"
+        />
+        
+    <!-- <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_direction_setup_down"
+        /> -->
+        
+    <!-- Operation buttons -->
+    <Button
+        android:id="@+id/btn_direction_from_pnt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/btn_direction_point_info"
+        android:gravity="left|center_vertical"
+        android:text="@string/hint_on_direction.from_default"
+        android:textSize="15sp"
+        />
+        
+    <Button
+        android:id="@+id/btn_direction_to_pnt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_direction_from_pnt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/btn_direction_point_info"
+        android:gravity="left|center_vertical"
+        android:text="@string/hint_on_direction.to_default"
+        android:textSize="15sp"
+        />
+        
+    <Button
+        android:id="@+id/btn_direction_to_f_pnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/btn_direction_point_to"
+        android:enabled="false"
+        />
+        
+    <Button
+        android:id="@+id/btn_direction_to_t_pnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_direction_to_f_pnt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/btn_direction_point_to"
+        android:enabled="false"
+        />
+        
+    <Button
+        android:id="@+id/btn_direction_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_direction_to_t_pnt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/btn_direction_point_go"
+        android:enabled="false"
+        />
+        
+    <RadioGroup
+        android:id="@+id/btn_group_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_direction_to_t_pnt"
+        android:layout_toLeftOf="@id/btn_direction_go"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn_direction_mode_walk"
+            android:layout_width="45dp"
+            android:layout_height="44dp"
+            android:button="@drawable/btn_direction_mode_l_walk"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/btn_direction_mode_mt"
+            android:layout_width="45dp"
+            android:layout_height="44dp"
+            android:button="@drawable/btn_direction_mode_r_mt"
+            />
+    </RadioGroup>
+            
+</RelativeLayout>

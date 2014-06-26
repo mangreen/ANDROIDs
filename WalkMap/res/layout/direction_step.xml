@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    >
+    
+    <!-- Background -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_direction_step_up"
+        />
+        
+    <!-- Operation buttons -->
+    <Button
+        android:id="@+id/btn_direction_step_info"
+        android:layout_width="fill_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="92dp"
+        android:background="@drawable/btn_direction_step_info"
+        android:gravity="left|center_vertical"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="#EEE"
+        />
+        
+    <Button
+        android:id="@+id/btn_direction_step_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/btn_direction_step_last"
+        />
+        
+    <Button
+        android:id="@+id/btn_direction_step_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_direction_step_last"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/btn_direction_step_next"
+        />
+        
+    <CheckBox
+        android:id="@+id/cbox_direction_step_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_direction_step_last"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="46dp"
+        android:padding="0dp"
+        android:background="@drawable/btn_direction_step_switch"
+        android:button="@drawable/transparent_mask"
+        android:enabled="false"
+        />
+        
+    <Button
+        android:id="@+id/btn_direction_step_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbox_direction_step_switch"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/btn_direction_list"
+        />
+            
+</RelativeLayout>

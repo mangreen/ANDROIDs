@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/WalkMap/!svn/ver/52/res/layout
+END
+direction_setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/WalkMap/!svn/ver/1/res/layout/direction_setup.xml
+END
+idr_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/WalkMap/!svn/ver/52/res/layout/idr_main.xml
+END
+point_detail_info_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/WalkMap/!svn/ver/1/res/layout/point_detail_info_layout.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/WalkMap/!svn/ver/51/res/layout/main.xml
+END
+point_detail_info_op.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/WalkMap/!svn/ver/1/res/layout/point_detail_info_op.xml
+END
+simple_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/WalkMap/!svn/ver/1/res/layout/simple_info.xml
+END
+list_manager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/WalkMap/!svn/ver/1/res/layout/list_manager.xml
+END
+simple_listview_for_style.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/WalkMap/!svn/ver/25/res/layout/simple_listview_for_style.xml
+END
+idr_search_poi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/WalkMap/!svn/ver/1/res/layout/idr_search_poi.xml
+END
+popup_text_btn.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/WalkMap/!svn/ver/1/res/layout/popup_text_btn.xml
+END
+direction_step.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/WalkMap/!svn/ver/1/res/layout/direction_step.xml
+END
+add_bookmark.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/WalkMap/!svn/ver/39/res/layout/add_bookmark.xml
+END

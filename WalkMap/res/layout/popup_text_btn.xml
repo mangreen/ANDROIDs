@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<Button xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@+id/popup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_popup_text_above"
+        android:text="民生東路四段133號13樓"
+        android:textColor="#555"
+        android:textSize="15sp"
+        />

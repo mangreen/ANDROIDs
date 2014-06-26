@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.iiiesti.pedestrian.pmap"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" 
+                 android:label="@string/app_name"
+                 android:theme="@style/Theme.PMap">
+        <uses-library android:name="com.google.android.maps" />
+                 
+        <activity android:name=".PMap"
+                  android:label="@string/app_name_brief"
+                  android:windowSoftInputMode="adjustPan"
+                  android:configChanges="orientation"
+                  android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="geo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".searchable.X_Deprecated_Searchable_Location">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/pmap_searchable" />
+        </activity>
+        
+        <!-- declare the default search-able Activity for the whole application -->
+        <meta-data android:name="android.app.default_searchable"
+                   android:value=".searchable.X_Deprecated_Searchable_Location" />
+
+        <activity android:name=".customPanel.PointsDetailPanel_CUSTOM" />
+
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest> 

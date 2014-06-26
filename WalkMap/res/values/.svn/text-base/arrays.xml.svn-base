@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="indoor_layer_menu">
+		<item>全部</item>	
+        <item>電梯</item>
+        <item>電扶梯</item>
+        <item>樓梯</item>
+        <item>出入口</item>
+        <item>廁所</item>
+        <item>公共設施</item>
+        <item>月台</item>
+        <item>POI</item>
+    </string-array>
+    <string-array name="search_menu">
+        <item>Locations</item>
+        <item>Transit Stops</item>
+        <item>Transit Lines</item>
+    </string-array>
+    <string-array name="layer_menu">
+        <item>Transit Stops</item>
+        <item>Restaurant</item>
+        <item>Entertainment</item>
+        <item>Shopping</item>
+        <item>Hotel</item>
+        <item>MRT</item>
+    </string-array>
+    <string-array name="transit_avoid_menu">
+        <item>飛機</item>
+        <item>鐵路</item>
+        <item>高鐵</item>
+        <item>客運</item>
+        <item>公車</item>
+        <item>捷運</item>
+    </string-array>
+    <string-array name="developer_menu">
+        <item>Enable data_ctrl_panel</item>
+        <item>MTDB - Data import</item>
+        <item>MTDB - Information count</item>
+        <item>Overlay - Toggle location</item>
+        <item>MapView - Get LD/RU</item>
+        <item>Direction - Initialize Settings</item>
+        <item>BKDB - Information count</item>
+        <item>BKDB - Add point</item>
+        <item>BKDB - Clear all bookmarks</item>
+        <item>BKDB - Delete last</item>
+        <item>BKDB - Update first</item>
+        <item>INDOOR - Direct switch</item>
+        <item>PMAP - Pin a point via intent</item>
+    </string-array>
+    <string-array name="point_operations_for_custom_pin">
+        <item>● 移除自訂點</item>
+    </string-array>
+    <string-array name="bookmarks_default">
+        <item>Current Location</item>
+    </string-array>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    >
+   
+    <!-- Map base --> 
+    <!-- <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:apiKey="0eCnhij78qYJXw-qufpUvgmYcKI2EORawr74jSA"
+        >
+    </com.google.android.maps.MapView> --> <!-- Create programmically @ 2010/10/20 -->
+    
+    <!-- Map control -->
+    <Button android:id="@+id/btn_map_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_r_map_mode_na"
+            />
+    <Button android:id="@+id/btn_zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_map_mode"
+            android:layout_alignParentBottom="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:background="@drawable/btn_r_zoom_in"
+            />
+    <Button android:id="@+id/btn_zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_zoom_in"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_r_zoom_out"
+            />
+            
+    <!-- Data control -->
+    <!-- <Button android:id="@+id/btn_list_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_l_list"
+            android:visibility="gone"
+            />
+    <Button android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_list_mode"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_l_prev"
+            android:visibility="gone"
+            />
+    <Button android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_prev"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_l_next"
+            android:visibility="gone"
+            />
+    <Button android:id="@+id/btn_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_l_direction"
+            /> -->
+
+</RelativeLayout>

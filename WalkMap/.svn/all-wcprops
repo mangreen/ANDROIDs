@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/svn/WalkMap/!svn/ver/56
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/WalkMap/!svn/ver/1/default.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/WalkMap/!svn/ver/1/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/WalkMap/!svn/ver/1/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/WalkMap/!svn/ver/42/AndroidManifest.xml
+END

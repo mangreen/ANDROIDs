@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_direction_mode_l_walk_checked" 
+          android:state_checked="true" />
+    <item android:drawable="@drawable/btn_direction_mode_l_walk_pressed"
+          android:state_checked="false"
+          android:state_pressed="true" />
+    <item android:drawable="@drawable/btn_direction_mode_l_walk_focused"
+          android:state_checked="false"
+          android:state_focused="true" />
+    <item android:drawable="@drawable/btn_direction_mode_l_walk_normal" />
+</selector>

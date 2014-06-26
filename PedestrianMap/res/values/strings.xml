@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WALKMAP</string>
+    <string name="app_label">WALKMAP</string>
+    <string name="app_name_brief">WALKMAP</string>
+    
+    <string name="pmap.menu_search">Search</string>
+    <string name="pmap.menu_search.locations">Locations</string>
+    <string name="pmap.menu_search.stops">Transit Stops</string>
+    <string name="pmap.menu_search.lines">Transit Lines</string>
+    <string name="pmap.menu_direction">Direction</string>
+    <string name="pmap.menu_layer">Layer</string>
+    <string name="pmap.menu_bookmark">Bookmark</string>
+    <string name="pmap.menu_clean_map">Clean Map</string>
+    <string name="pmap.menu_about">About</string>
+    
+    <string name="pmap.search_hint_location">Search Locations</string>
+    <string name="pmap.about_title">WALKMAP</string>
+    <string name="pmap.about_message">Enter developer menu?</string>
+    <string name="pmap.bookmark_none">No available bookmarks!</string>
+    <string name="pmap.bookmark_no_current_location">Current location not available</string>
+    <string name="pmap.bookmark_clear_done">All bookmarks cleared</string>
+    <string name="pmap.bookmark_clear_title">Bookmark Clear</string>
+    <string name="pmap.bookmark_clear_hint">This will erase all the existing bookmarks. Are you sure to clear all the data?</string>
+    <string name="pmap.bookmark_add_title">Add Bookmark</string>
+    <string name="pmap.bookmark_add_title_str">Name:</string>
+    <string name="pmap.bookmark_add_info_str">Info:</string>
+    <string name="pmap.develop_title">Developer Menu</string>
+    
+    <string name="btn.ok">OK</string>
+    <string name="btn.add">ADD</string>
+    <string name="btn.clear">Clear All</string>
+    <string name="btn.yes">Yes</string>
+    <string name="btn.cancel">Cancel</string>
+    <string name="btn.no">No</string>
+    
+    <string name="hint_on_map.current_location_accuracy">Current Location Accuracy:</string>
+    <string name="hint_on_map.current_location_accuracy_unit">m</string>
+    
+    <string name="hint_on_mt_import.title">MassTransit Data Import</string>
+    <string name="hint_on_mt_import.confirm">This will erase all the existing data from the DB. Are you sure to import the new data?</string>
+    <string name="hint_on_mt_import.progressing">Importing. Please wait...</string>
+    <string name="hint_on_mt_import.failed_parameter">Invalid MassTransitDBManager. Check the input parameter of the execute().</string>
+    <string name="hint_on_mt_import.failed_import">Import failed. Check the MassTransitDBManager.dataImport() for more detail.</string>
+    <string name="hint_on_mt_import.failed_db">DB error:</string>
+    <string name="hint_on_mt_import.cancel">Import cancelled.</string>
+    <string name="hint_on_mt_import.complete">Import completed.</string>
+    
+    <string name="hint_on_get_direction.title">Routing</string>
+    <string name="hint_on_get_direction.hint">Data retrieving. Please wait...</string>
+    <string name="hint_on_get_direction.failed_title">Routing Failed</string>
+    <string name="hint_on_get_direction.failed_hint">Server error. Please check the network connectivity.</string>
+    
+    <string name="hint_on_get_address.title">Reverse Geocoding</string>
+    <string name="hint_on_get_address.hint">Lookup the location address. Please wait...</string>
+    <string name="hint_on_get_address.failed_hint">Address not found</string>
+    
+    <string name="hint_on_load.searching">Searching. Please wait...</string>
+    <string name="custom_point">Custom Point</string>
+    
+    <string name="unit.meter">公尺</string>
+    <string name="unit.kilometer">公里</string>
+    
+    <string name="hint_on_direction.from_default">CLICK HERE/MAP TO SET START</string>
+    <string name="hint_on_direction.to_default">CLICK HERE/MAP TO SET END</string>
+    <string name="hint_on_direction.cur_location">CURRENT LOCATION</string>
+    <string name="hint_on_direction.cur_location_info">Your current location</string>
+    <string name="hint_on_direction.triple_dots"> . . .</string>
+    
+    <string name="direction_setup.menu_reverse">Reverse</string>
+    <string name="direction_setup.menu_clear">Clear</string>
+    <string name="direction_setup.menu_mass_opt">Options</string>
+    
+    <string name="hint_on_bookmark_db.title">Bookmark DB Operation</string>
+        
+    <string name="dstatus_not_found">Direction not found. Please try another parameter set.</string>
+    <string name="dstatus_zero_results">Direction not found. Please try another parameter set.</string>
+    <string name="dstatus_waypoints_exceeded">MAX_WAYPOINTS_EXCEEDED</string>
+    <string name="dstatus_invalid_req">INVALID_REQUEST</string>
+    <string name="dstatus_over_query">OVER_QUERY_LIMIT</string>
+    <string name="dstatus_req_denied">REQUEST_DENIED</string>
+    <string name="dstatus_unknown_err">UNKNOWN_SERVER_ERROR</string>
+    <string name="dstatus_null">UNKNOWN_APPLICATION_ERROR</string>
+    <string name="dtmode_walking">WALKING</string>
+    <string name="dtmode_virtual">VIRTUAL</string>
+    <string name="dtmode_indoor">INDOOR</string>
+    <string name="dtmode_masstransit">MT</string>
+    <string name="dtmode_masstransit_sub">MTSUB</string>
+    <string name="sample_result">
+    {
+  \"status\": \"OK\",
+  \"routes\": [ {
+    \"summary\": \"光復北路和民權東路四段\",
+    \"legs\": [ {
+      \"steps\": [ {
+        \"travel_mode\": \"DRIVING\",
+        \"start_location\": {
+          \"lat\": 25.0600100,
+          \"lng\": 121.5549500
+        },
+        \"end_location\": {
+          \"lat\": 25.0618300,
+          \"lng\": 121.5546300
+        },
+        \"polyline\": {
+          \"points\": \"ap}wCme|dVkJ~@\",
+          \"levels\": \"BB\"
+        },
+        \"duration\": {
+          \"value\": 27,
+          \"text\": \"1 分鐘\"
+        },
+        \"html_instructions\": \"朝\u003cb\u003e北\u003c/b\u003e，走\u003cb\u003e光復北路\u003c/b\u003e，往\u003cb\u003e富錦街\u003c/b\u003e前進\",
+        \"distance\": {
+          \"value\": 206,
+          \"text\": \"0.2 公里\"
+        }
+      }, {
+        \"travel_mode\": \"DRIVING\",
+        \"start_location\": {
+          \"lat\": 25.0618300,
+          \"lng\": 121.5546300
+        },
+        \"end_location\": {
+          \"lat\": 25.0622600,
+          \"lng\": 121.5594100
+        },
+        \"polyline\": {
+          \"points\": \"m{}wCmc|dVSuIaAeR\",
+          \"levels\": \"B?B\"
+        },
+        \"duration\": {
+          \"value\": 76,
+          \"text\": \"1 分鐘\"
+        },
+        \"html_instructions\": \"在第二個路口向\u003cb\u003e右\u003c/b\u003e轉入\u003cb\u003e民權東路四段\u003c/b\u003e\u003cdiv style=\\"font-size:0.9em\\"\u003e目的地將在右邊\u003c/div\u003e\",
+        \"distance\": {
+          \"value\": 484,
+          \"text\": \"0.5 公里\"
+        }
+      } ],
+      \"duration\": {
+        \"value\": 103,
+        \"text\": \"2 分鐘\"
+      },
+      \"distance\": {
+        \"value\": 690,
+        \"text\": \"0.7 公里\"
+      },
+      \"start_location\": {
+        \"lat\": 25.0600100,
+        \"lng\": 121.5549500
+      },
+      \"end_location\": {
+        \"lat\": 25.0622600,
+        \"lng\": 121.5594100
+      },
+      \"start_address\": \"105台灣台北市松山區光復北路199號\",
+      \"end_address\": \"105台灣台北市松山區民權東路四段\",
+      \"via_waypoint\": [ ]
+    } ],
+    \"copyrights\": \"地圖資料 ©2010 Kingway\",
+    \"overview_polyline\": {
+      \"points\": \"ap}wCme|dVkJ~@SuIaAeR\",
+      \"levels\": \"B@?B\"
+    },
+    \"warnings\": [ ],
+    \"waypoint_order\": [ ]
+  } ]
+}
+    </string>
+</resources>

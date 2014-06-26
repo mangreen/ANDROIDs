@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/WalkMap/!svn/ver/55/src/com/iiiesti/walkmap/indoor
+END
+PinPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/WalkMap/!svn/ver/33/src/com/iiiesti/walkmap/indoor/PinPoint.java
+END
+PoiPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/WalkMap/!svn/ver/43/src/com/iiiesti/walkmap/indoor/PoiPoint.java
+END
+IndoorDrawView.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/WalkMap/!svn/ver/36/src/com/iiiesti/walkmap/indoor/IndoorDrawView.java
+END
+Storey.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/WalkMap/!svn/ver/1/src/com/iiiesti/walkmap/indoor/Storey.java
+END
+BitMapPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/WalkMap/!svn/ver/1/src/com/iiiesti/walkmap/indoor/BitMapPoint.java
+END
+IndoorMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/WalkMap/!svn/ver/55/src/com/iiiesti/walkmap/indoor/IndoorMap.java
+END

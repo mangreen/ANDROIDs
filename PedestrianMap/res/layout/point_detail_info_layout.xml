@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="#000"
+>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="9dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    >
+    <TextView 
+        android:id="@+id/point_name"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingBottom="6dp"
+        android:layout_alignParentTop="true"
+        android:textSize="19sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/point_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/point_name"
+        android:layout_alignParentRight="true"
+        android:background="#111"
+        />
+    <TextView
+        android:id="@+id/point_info"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:minHeight="40dp"
+        android:gravity="top"
+        android:layout_below="@id/point_name"
+        android:layout_toLeftOf="@id/point_image"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        />
+    <TextView
+        android:id="@+id/point_sub_info"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:minHeight="15dp"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@id/point_image"
+        android:layout_below="@id/point_info"
+        android:textSize="15sp"
+        android:textColor="#AAA"
+        />
+    </RelativeLayout>
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+            <Button android:id="@+id/btn_pnt_info_op_set_start"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_set_start"
+                  />
+            <Button android:id="@+id/btn_pnt_info_op_set_end"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_set_end"
+                  />
+            <Button android:id="@+id/btn_pnt_info_op_add_bookmark"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_bookmark"
+                  />
+            <Button android:id="@+id/btn_pnt_info_op_in_out"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_in_out"
+                  />
+        </TableRow>
+        <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+            <Button android:id="@+id/btn_pnt_info_op_street_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_street_view"
+                  />
+            <Button android:id="@+id/btn_pnt_info_op_ar_direct"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_ar_direct"
+                  />
+            <Button android:id="@+id/btn_pnt_info_op_srch_google"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_srch_google"
+                  />
+            <Button android:id="@+id/btn_pnt_info_op_map_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="0dp"
+                  android:background="@drawable/btn_point_op_map_view"
+                  />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

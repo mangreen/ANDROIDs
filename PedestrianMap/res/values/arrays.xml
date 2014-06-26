@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_menu">
+        <item>Locations</item>
+        <item>Transit Stops</item>
+        <item>Transit Lines</item>
+    </string-array>
+    <string-array name="layer_menu">
+        <item>POIs</item>
+        <item>Transit Stops</item>
+    </string-array>
+    <string-array name="developer_menu">
+        <item>Enable data_ctrl_panel</item>
+        <item>MTDB - Data import</item>
+        <item>MTDB - Information count</item>
+        <item>Overlay - Toggle location</item>
+        <item>MapView - Get LD/RU</item>
+        <item>Direction - Initialize Settings</item>
+        <item>BKDB - Information count</item>
+        <item>BKDB - Add point</item>
+        <item>BKDB - Clear all bookmarks</item>
+        <item>BKDB - Delete last</item>
+        <item>BKDB - Update first</item>
+        <item>JSON - Parsing</item>
+        <item>POPUP - Show popup</item>
+    </string-array>
+    <string-array name="point_operations_for_custom_pin">
+        <item>● 移除自訂點</item>
+    </string-array>
+    <string-array name="bookmarks_default">
+        <item>Current Location</item>
+    </string-array>
+</resources>

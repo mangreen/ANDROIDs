@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WALKMAP</string>
+    <string name="app_label">WALKMAP</string>
+    <string name="app_name_brief">WALKMAP</string>
+    
+    <string name="indoor_floorlist">Floor List</string>
+    <string name="indoor_floorlist_none">No available Floor!</string>
+    <string name="indoor_search_no_result">Empty Result</string>
+    <string name="indoor_no_map">No This Map</string>
+    <string name="indoor_no_map_message">Pleas update maps</string>
+    
+    <string name="pmap.menu_search">Search</string>
+    <string name="pmap.menu_search.locations">Locations</string>
+    <string name="pmap.menu_search.stops">Transit Stops</string>
+    <string name="pmap.menu_search.lines">Transit Lines</string>
+    <string name="pmap.menu_direction">Direction</string>
+    <string name="pmap.menu_layer">Layer</string>
+    <string name="pmap.menu_bookmark">Bookmark</string>
+    <string name="pmap.menu_clean_map">Clean Map</string>
+    <string name="pmap.menu_about">About</string>
+    <string name="pmap.menu_direction_opt">Include</string>
+    <string name="pmap.bookmark_menu_delete">Delete</string>
+    <string name="pmap.bookmark_menu_edit">Edit</string>
+    
+    <string name="pmap.search_hint_outdoor_location">Search Locations</string>
+    <string name="pmap.search_hint_indoor_poi">Search Indoor POIs</string>
+    <string name="pmap.about_title">WALKMAP</string>
+    <string name="pmap.about_message">Enter developer menu?</string>
+    <string name="pmap.bookmark_none">No available bookmarks!</string>
+    <string name="pmap.bookmark_no_current_location">Current location is not available</string>
+    <string name="pmap.bookmark_no_current_location_indoor">Current location is not available in indoor</string>
+    <string name="pmap.bookmark_clear_done">All bookmarks cleared</string>
+    <string name="pmap.bookmark_clear_title">Bookmark Clear</string>
+    <string name="pmap.bookmark_clear_hint">This will erase all the existing bookmarks. Are you sure to clear all the data?</string>
+    <string name="pmap.bookmark_add_title">Add Bookmark</string>
+    <string name="pmap.bookmark_add_title_str">Name:</string>
+    <string name="pmap.bookmark_add_info_str">Info:</string>
+    <string name="pmap.bookmark_delete">Delete Bookmark</string>
+    <string name="pmap.bookmark_delete_info">This move can not return!</string>
+    <string name="pmap.bookmark_edit">Edit Bookmark</string>
+    <string name="pmap.develop_title">Developer Menu</string>
+    
+    <string name="btn.ok">OK</string>
+    <string name="btn.add">ADD</string>
+    <string name="btn.clear">Clear All</string>
+    <string name="btn.reset">Reset All</string>
+    <string name="btn.yes">Yes</string>
+    <string name="btn.cancel">Cancel</string>
+    <string name="btn.no">No</string>
+    <string name="btn.more">More</string>
+    <string name="btn.full_srch">Full Search</string>
+    <string name="btn.delete">Delete</string>
+    <string name="btn.chg_mode">Change Mode</string>
+    <string name="btn.edit">Edit</string>
+    
+    <string name="hint_on_map.current_location_accuracy">Current Location Accuracy:</string>
+    <string name="hint_on_map.current_location_accuracy_unit">m</string>
+    
+    <string name="hint_on_bookmark_context.for_current_location">The default item cannot be modified</string>
+    
+    <string name="hint_on_mt_import.title">MassTransit Data Import</string>
+    <string name="hint_on_mt_import.confirm">This will erase all the existing data from the DB. Are you sure to import the new data?</string>
+    <string name="hint_on_mt_import.progressing">Importing. Please wait...</string>
+    <string name="hint_on_mt_import.failed_parameter">Invalid MassTransitDBManager. Check the input parameter of the execute().</string>
+    <string name="hint_on_mt_import.failed_import">Import failed. Check the MassTransitDBManager.dataImport() for more detail.</string>
+    <string name="hint_on_mt_import.failed_db">DB error:</string>
+    <string name="hint_on_mt_import.cancel">Import cancelled.</string>
+    <string name="hint_on_mt_import.complete">Import completed.</string>
+    
+    <string name="hint_on_get_direction.title">Routing</string>
+    <string name="hint_on_get_direction.hint">Data retrieving. Please wait...</string>
+    <string name="hint_on_get_direction.failed_title">Routing Failed</string>
+    <string name="hint_on_get_direction.failed_hint">Connection timeout. Please check the network connectivity.</string>
+    <string name="hint_on_got_direction.title">Available Routes</string>
+    
+    <string name="hint_on_search.title">Searching</string>
+    <string name="hint_on_search_location.hint">Searching location. Please wait...</string>
+    <string name="hint_on_search_result.title">Search Result</string>
+    <string name="hint_on_search_result.more_title">More Search Result</string>
+    <string name="hint_on_search_result.failed_title">Search Failed</string>
+    <string name="hint_on_search_result.failed_hint">Connection timeout. Please check the network connectivity.</string>
+    <string name="hint_on_search_result.location_not_found_hint">Location not found in current view. Please try another keyword or do the full search.</string>
+    <string name="hint_on_search_result.full_location_not_found_hint">Location not found. Please try another keyword.</string>
+    
+    <string name="hint_on_direction_step_list.title">Steps List</string>
+    
+    <string name="hint_on_get_address.title">Reverse Geocoding</string>
+    <string name="hint_on_get_address.hint">Lookup the location address. Please wait...</string>
+    <string name="hint_on_get_address.failed_hint">Address not found</string>
+    
+    <string name="hint_on_load.searching">Searching. Please wait...</string>
+    <string name="custom_point">Custom Point</string>
+    
+    <string name="unit.meter">公尺</string>
+    <string name="unit.kilometer">公里</string>
+    <string name="unit.minute">分鐘</string>
+    
+    <string name="hint_on_indoor.positive_at">圖面樓層: </string>
+    <string name="hint_on_indoor.negative_at">圖面樓層: 地下</string>
+    <string name="hint_on_indoor.floor">樓</string>
+    <string name="hint_on_indoor.guide">,請依圖面路線指引前進</string>
+    <string name="hint_on_indoor.at_start_step">由起點出發</string>
+    <string name="hint_on_indoor.at_end_step">抵達目的地</string>
+    
+    <string name="hint_on_direction.from_default">SET START VIA BOOKMARK/MAP</string>
+    <string name="hint_on_direction.to_default">SET END VIA BOOKMARK/MAP</string>
+    <string name="hint_on_direction.cur_location">CURRENT LOCATION</string>
+    <string name="hint_on_direction.cur_location_info">Your current location</string>
+    <string name="hint_on_direction.triple_dots"> . . .</string>
+    <string name="hint_on_direction.about">約</string>
+    <string name="hint_on_direction.arrive">到站</string>
+    <string name="hint_on_direction.arriving">進站中</string>
+    
+    <string name="direction_setup.menu_reverse">Reverse</string>
+    <string name="direction_setup.menu_clear">Clear</string>
+    <string name="direction_setup.menu_mass_opt">Options</string>
+    <string name="direction_setup.menu_route_list">Switch Route</string>
+    
+    <string name="hint_on_bookmark_db.title">Bookmark DB Operation</string>
+        
+    <string name="dstatus_not_found">Direction not found. Please try another parameter set.</string>
+    <string name="dstatus_zero_results">Direction not found. Please try another parameter set.</string>
+    <string name="dstatus_waypoints_exceeded">MAX_WAYPOINTS_EXCEEDED</string>
+    <string name="dstatus_invalid_req">INVALID_REQUEST</string>
+    <string name="dstatus_over_query">OVER_QUERY_LIMIT</string>
+    <string name="dstatus_req_denied">REQUEST_DENIED</string>
+    <string name="dstatus_unknown_err">UNKNOWN_SERVER_ERROR</string>
+    <string name="dstatus_null">UNKNOWN_APPLICATION_ERROR</string>
+</resources>

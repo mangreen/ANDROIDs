@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pmap.bookmark_context_delete"
+          android:title="@string/pmap.bookmark_menu_delete" 
+          />
+    <item android:id="@+id/pmap.bookmark_context_edit"
+          android:title="@string/pmap.bookmark_menu_edit" 
+          />
+</menu>

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/WalkMap/!svn/ver/32/src/com/iiiesti/walkmap/overlays
+END
+OverlayItem_MT.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/WalkMap/!svn/ver/1/src/com/iiiesti/walkmap/overlays/OverlayItem_MT.java
+END
+ItemizedPointsOverlay_POI.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/WalkMap/!svn/ver/25/src/com/iiiesti/walkmap/overlays/ItemizedPointsOverlay_POI.java
+END
+X_Deprecated_Overlay_DirectionLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/WalkMap/!svn/ver/25/src/com/iiiesti/walkmap/overlays/X_Deprecated_Overlay_DirectionLine.java
+END
+ItemizedPointsOverlay_CUSTOM.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/WalkMap/!svn/ver/25/src/com/iiiesti/walkmap/overlays/ItemizedPointsOverlay_CUSTOM.java
+END
+Overlay_Popup.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/WalkMap/!svn/ver/32/src/com/iiiesti/walkmap/overlays/Overlay_Popup.java
+END
+ItemizedPointsOverlay_NOOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/WalkMap/!svn/ver/25/src/com/iiiesti/walkmap/overlays/ItemizedPointsOverlay_NOOP.java
+END
+OverlayItem_POI.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/WalkMap/!svn/ver/25/src/com/iiiesti/walkmap/overlays/OverlayItem_POI.java
+END
+ItemizedPointsOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/WalkMap/!svn/ver/25/src/com/iiiesti/walkmap/overlays/ItemizedPointsOverlay.java
+END
+Overlay_Location.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/WalkMap/!svn/ver/1/src/com/iiiesti/walkmap/overlays/Overlay_Location.java
+END
+X_Deprecated_CustomLocationOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/WalkMap/!svn/ver/1/src/com/iiiesti/walkmap/overlays/X_Deprecated_CustomLocationOverlay.java
+END

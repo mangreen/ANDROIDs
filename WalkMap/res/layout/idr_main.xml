@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  android:id="@+id/layoutIndoor"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="#9A9A9A"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+	<ImageView
+		android:id="@+id/mapImageView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentLeft="true"
+		android:scaleType="matrix"
+	/>
+    
+    <!-- Tony ADDED @ 20110113 - start -->
+    <ImageView
+        android:id="@+id/btnOutdoorSwitchBg"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_direction_step_up"
+        />
+        
+    <TextView
+    	android:id="@+id/textMapInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/btn_direction_step_info_normal"
+        android:gravity="left|center_vertical"
+        android:textColor="#FEEE"
+        android:textSize="18sp"
+        />
+        
+    <Button
+    	android:id="@+id/btnOutdoorSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/btn_outdoor_switch"
+        />    
+        
+    <!-- <Button android:id="@+id/btn_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_l_direction"
+        android:visibility="gone"
+        /> -->
+    <!-- Tony ADDED @ 20110113 - end -->
+    
+    <Button android:id="@+id/btnOutdoorSwitch_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_r_indoor_sw"
+            android:visibility="gone"
+            />
+	<Button
+		android:id="@+id/btnZoomIn"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@id/btnOutdoorSwitch_sub"
+        android:layout_alignParentBottom="true"
+		android:background="@drawable/btn_r_zoom_in"
+	/>
+	<Button
+		android:id="@+id/btnZoomOut"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnZoomIn"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/btn_r_zoom_out"
+	/>
+	<Button android:id="@+id/btnFloorList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_floor_list"
+    />
+    <Button android:id="@+id/btnDownstair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnFloorList"
+            android:layout_alignParentBottom="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:background="@drawable/btn_downstair"
+    />
+    <Button android:id="@+id/btnUpstair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnDownstair"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_upstair"
+    />
+    
+    
+</RelativeLayout>
